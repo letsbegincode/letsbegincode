@@ -1,0 +1,73 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/profile-stats.yml
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Generate stats card (dark)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=letsbegincode&title_color=dfbd78&icon_color=dfbd78&text_color=c9d1d9&bg_color=0d1117&border_color=30363d&border_radius=12&show_icons=true&hide_rank=true&card_width=420
+          path: profile/stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate stats card (light)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: stats
+          options: username=letsbegincode&title_color=8a651f&icon_color=8a651f&text_color=424a53&bg_color=ffffff&border_color=d1d9e0&border_radius=12&show_icons=true&hide_rank=true&card_width=420
+          path: profile/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate languages card (dark)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          options: username=letsbegincode&title_color=dfbd78&icon_color=dfbd78&text_color=c9d1d9&bg_color=0d1117&border_color=30363d&border_radius=12&layout=compact&langs_count=6&card_width=330
+          path: profile/languages-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate languages card (light)
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
+        with:
+          card: top-langs
+          options: username=letsbegincode&title_color=8a651f&icon_color=8a651f&text_color=424a53&bg_color=ffffff&border_color=d1d9e0&border_radius=12&layout=compact&langs_count=6&card_width=330
+          path: profile/languages-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Commit refreshed cards
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --cached --quiet; then
+            echo "Stats cards are already current."
+            exit 0
+          fi
+          git commit -m "Refresh GitHub activity cards"
+          git push
