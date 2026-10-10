@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 214" role="img" aria-labelledby="title">
+<title id="title">Core Banking Engine. Banking APIs, transactions, persistence, and TTL caching.</title>
+<g font-family="Arial, Helvetica, sans-serif">
+<defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfbd78" stop-opacity=".08"/><stop offset="1" stop-color="#dfbd78" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="418" height="212" rx="14" fill="#171b20" stroke="#343a42"/>
+<rect x="2" y="2" width="416" height="210" rx="14" fill="url(#wash)"/>
+<text x="24" y="31" fill="#dfbd78" font-size="11" font-weight="700" letter-spacing="1.2">01 / BACKEND SYSTEMS</text>
+<path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="#dfbd78" stroke-width="1.7"/>
+<g transform="translate(346 102)" fill="none" stroke="#83a9b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="m5 16 23-12 23 12M10 19h36M13 22v22m15-22v22m15-22v22M7 48h42"/></g>
+<text x="24" y="77" fill="#f3f1ec" font-size="26" font-weight="700" letter-spacing="-.7">Core Banking Engine</text>
+<text x="24" y="113" fill="#b3b6ba" font-size="18">Banking APIs, transactions,</text>
+<text x="24" y="138" fill="#b3b6ba" font-size="18">persistence, and TTL caching.</text>
+<rect x="24" y="168" width="51.2" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="35" y="185" fill="#b3b6ba" font-size="13">Java</text><rect x="83.2" y="168" width="51.2" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="94.2" y="185" fill="#b3b6ba" font-size="13">JDBC</text><rect x="142.4" y="168" width="58.5" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="153.4" y="185" fill="#b3b6ba" font-size="13">MySQL</text>
+</g>
+</svg>
