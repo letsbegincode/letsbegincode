@@ -70,4 +70,5 @@ jobs:
             exit 0
           fi
           git commit -m "Refresh GitHub activity cards"
+          git pull --rebase origin main
           git push
