@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 170" role="img" aria-labelledby="title">
+<title id="title">Let&#x27;s build something useful. Explore my portfolio or get in touch.</title>
+<g font-family="Arial, Helvetica, sans-serif">
+<defs><radialGradient id="glow"><stop stop-color="#dfbd78" stop-opacity=".14"/><stop offset="1" stop-color="#dfbd78" stop-opacity="0"/></radialGradient></defs>
+<rect x="1" y="1" width="838" height="168" rx="16" fill="#111315" stroke="#343a42"/>
+<ellipse cx="720" cy="83" rx="175" ry="120" fill="url(#glow)"/>
+<text x="30" y="39" fill="#dfbd78" font-size="13" letter-spacing="2">LET'S CONNECT</text>
+<text x="28" y="90" fill="#f3f1ec" font-size="44" font-weight="700" letter-spacing="-1">Let's build something</text>
+<text x="28" y="139" fill="#dfbd78" font-size="44" font-weight="700" letter-spacing="-1">useful.</text>
+<circle cx="739" cy="86" r="57" fill="none" stroke="#dfbd78" stroke-opacity=".25"/>
+<g transform="translate(688 48) scale(1.1)"><g fill="none" stroke="#dfbd78" stroke-width="4" stroke-linecap="square" stroke-linejoin="bevel" transform="translate(3 0) skewX(-6)">
+<path d="M8 50 22 14 36 50M13 38h18"/>
+<path d="M42 50V14h15l8 8v8l-8 8H42m13 0 12 12"/>
+<path d="m89 18-4-4h-8l-8 8v5l18 9v8l-7 6h-8l-4-4"/>
+</g></g>
+<path d="M618 86h64m114 0h20" stroke="#dfbd78" stroke-opacity=".3"/>
+<circle cx="618" cy="86" r="3" fill="#83a9b8"/>
+</g>
+</svg>

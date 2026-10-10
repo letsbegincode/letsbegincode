@@ -112,11 +112,118 @@ def button(p, label, primary=False):
 <path d="M94 22l7-7m-7 0h7v7" fill="none" stroke="{ink}" stroke-width="1.4" stroke-linecap="round"/>''')
 
 
+ICONS = {
+    "code": '<path d="m18 12-12 16 12 16m20-32 12 16-12 16m-7-39-7 46"/>',
+    "data": '<ellipse cx="28" cy="10" rx="21" ry="7"/><path d="M7 10v35c0 11 42 11 42 0V10m-42 17c0 11 42 11 42 0"/>',
+    "cloud": '<path d="M12 43h31c17 0 17-23 2-24-2-20-31-20-35-2-17-3-19 25 2 26Z"/>',
+    "network": '<circle cx="28" cy="28" r="6"/><circle cx="8" cy="8" r="4"/><circle cx="48" cy="8" r="4"/><circle cx="8" cy="48" r="4"/><circle cx="48" cy="48" r="4"/><path d="m11 11 13 13m8 0 13-13M11 45l13-13m8 0 13 13"/>',
+    "activity": '<path d="M3 29h11l7-19 13 37 7-18h12"/>',
+}
+SECTIONS = [
+    ("about", "01", "Behind the code", "code"),
+    ("projects", "02", "Selected work", "network"),
+    ("toolkit", "03", "My toolkit", "cloud"),
+    ("activity", "04", "GitHub activity", "activity"),
+]
+TOOLKIT = [
+    ("languages", "Languages", ("Java · Python · SQL", "JavaScript · Bash"), "code"),
+    ("backend", "Backend & data", ("REST APIs · JDBC · MySQL", "Auth · Caching · MongoDB"), "data"),
+    ("cloud", "Cloud & delivery", ("Docker · Kubernetes · Helm", "OpenShift · Prometheus · CI/CD"), "cloud"),
+    ("ml", "Applied ML", ("Pandas · Scikit-learn", "Forecasting · Differential privacy"), "network"),
+]
+
+
+def section(p, entry):
+    slug, number, title, icon = entry
+    label = {"about": "EXPERIENCE", "projects": "PROJECTS", "toolkit": "TECHNOLOGIES", "activity": "PUBLIC ACTIVITY"}[slug]
+    return document(840, 104, title, f'''
+<defs><linearGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".08"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient>
+<pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="{p['muted']}" opacity=".16"/></pattern></defs>
+<rect x="1" y="1" width="838" height="102" rx="14" fill="{p['bg']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="836" height="100" rx="13" fill="url(#glow)"/>
+<rect x="610" y="2" width="228" height="100" rx="14" fill="url(#dots)"/>
+<path d="M25 2h90" stroke="{p['gold']}" stroke-width="2"/>
+<text x="26" y="30" fill="{p['gold']}" font-size="12" letter-spacing="2">{number} / {label}</text>
+<text x="24" y="77" fill="{p['ink']}" font-size="43" font-weight="700" letter-spacing="-1">{title}</text>
+<path d="M607 52h65m55 0h70" stroke="{p['gold']}" stroke-opacity=".3"/>
+<circle cx="700" cy="52" r="36" fill="{p['bg']}" stroke="{p['line']}"/>
+<g transform="translate(681 32) scale(.7)" fill="none" stroke="{p['blue']}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
+<circle cx="608" cy="52" r="3" fill="{p['gold']}"/>
+<circle cx="797" cy="52" r="3" fill="{p['blue']}"/>
+''')
+
+
+def toolkit(p, entry):
+    slug, title, lines, icon = entry
+    return document(420, 180, title + ": " + ". ".join(lines), f'''
+<defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{p['gold']}" stop-opacity=".07"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient></defs>
+<rect x="1" y="1" width="418" height="178" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="416" height="176" rx="13" fill="url(#wash)"/>
+<text x="24" y="49" fill="{p['ink']}" font-size="28" font-weight="700" letter-spacing="-.5">{escape(title)}</text>
+<g transform="translate(351 17) scale(.65)" fill="none" stroke="{p['blue']}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
+<path d="M24 73h40" stroke="{p['gold']}" stroke-width="2"/>
+<text x="24" y="111" fill="{p['muted']}" font-size="18">{escape(lines[0])}</text>
+<text x="24" y="144" fill="{p['muted']}" font-size="18">{escape(lines[1])}</text>
+''')
+
+
+def current_role(p):
+    return document(420, 214, "Current role: Software Engineer at Airbnb, contracted via Altimetrik. Payments risk and alerting. August 2026 to present.", f'''
+<defs><radialGradient id="halo"><stop stop-color="{p['gold']}" stop-opacity=".1"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient></defs>
+<rect x="1" y="1" width="418" height="212" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<ellipse cx="338" cy="62" rx="140" ry="105" fill="url(#halo)"/>
+<circle cx="30" cy="28" r="4" fill="{p['gold']}"/>
+<text x="43" y="32" fill="{p['gold']}" font-size="12" font-weight="700" letter-spacing="1.4">CURRENT CHAPTER</text>
+<text x="24" y="77" fill="{p['ink']}" font-size="35" font-weight="700">Airbnb</text>
+<text x="24" y="105" fill="{p['muted']}" font-size="18">Contracted via Altimetrik</text>
+<text x="24" y="144" fill="{p['ink']}" font-size="19">Payments risk &amp; alerting</text>
+<text x="24" y="171" fill="{p['muted']}" font-size="17">APIs, logs, and monitoring</text>
+<text x="24" y="197" fill="{p['gold']}" font-size="14">Aug 2026 — Present</text>
+<g transform="translate(346 48) scale(.72)" fill="none" stroke="{p['blue']}" stroke-width="2.1" stroke-linecap="round">{ICONS['activity']}</g>
+''')
+
+
+def background(p):
+    rows = [("Oracle", "Cloud & DevOps", 109), ("IIT Ropar", "Full stack & AI", 145), ("NIT Patna", "B.Tech · Computer Science", 181)]
+    content = []
+    for company, detail, y in rows:
+        content.append(f'<circle cx="29" cy="{y-5}" r="3" fill="{p["gold"]}"/><text x="43" y="{y}" fill="{p["ink"]}" font-size="19" font-weight="700">{company}</text><text x="152" y="{y}" fill="{p["muted"]}" font-size="16">{escape(detail)}</text>')
+    return document(420, 214, "Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.", f'''
+<rect x="1" y="1" width="418" height="212" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<text x="24" y="32" fill="{p['gold']}" font-size="12" font-weight="700" letter-spacing="1.4">EXPERIENCE &amp; FOUNDATIONS</text>
+<text x="24" y="77" fill="{p['ink']}" font-size="29" font-weight="700">The path here.</text>
+<path d="M29 105v71" stroke="{p['gold']}" stroke-opacity=".3"/>
+{''.join(content)}
+''')
+
+
+def contact(p):
+    return document(840, 170, "Let's build something useful. Explore my portfolio or get in touch.", f'''
+<defs><radialGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".14"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient></defs>
+<rect x="1" y="1" width="838" height="168" rx="16" fill="{p['bg']}" stroke="{p['line']}"/>
+<ellipse cx="720" cy="83" rx="175" ry="120" fill="url(#glow)"/>
+<text x="30" y="39" fill="{p['gold']}" font-size="13" letter-spacing="2">LET'S CONNECT</text>
+<text x="28" y="90" fill="{p['ink']}" font-size="44" font-weight="700" letter-spacing="-1">Let's build something</text>
+<text x="28" y="139" fill="{p['gold']}" font-size="44" font-weight="700" letter-spacing="-1">useful.</text>
+<circle cx="739" cy="86" r="57" fill="none" stroke="{p['gold']}" stroke-opacity=".25"/>
+<g transform="translate(688 48) scale(1.1)">{MONOGRAM.format(gold=p['gold'])}</g>
+<path d="M618 86h64m114 0h20" stroke="{p['gold']}" stroke-opacity=".3"/>
+<circle cx="618" cy="86" r="3" fill="{p['blue']}"/>
+''')
+
+
 for theme, palette in PALETTES.items():
     (ASSETS / f"banner-{theme}.svg").write_text(banner(palette), encoding="utf-8")
     for item in PROJECTS:
         (ASSETS / f"project-{item[0]}-{theme}.svg").write_text(project(palette, item), encoding="utf-8")
     for label in ("Portfolio", "Resume", "LinkedIn", "Email"):
         (ASSETS / f"link-{label.lower()}-{theme}.svg").write_text(button(palette, label, label == "Portfolio"), encoding="utf-8")
+    for entry in SECTIONS:
+        (ASSETS / f"section-{entry[0]}-{theme}.svg").write_text(section(palette, entry), encoding="utf-8")
+    for entry in TOOLKIT:
+        (ASSETS / f"toolkit-{entry[0]}-{theme}.svg").write_text(toolkit(palette, entry), encoding="utf-8")
+    (ASSETS / f"about-current-{theme}.svg").write_text(current_role(palette), encoding="utf-8")
+    (ASSETS / f"about-background-{theme}.svg").write_text(background(palette), encoding="utf-8")
+    (ASSETS / f"contact-{theme}.svg").write_text(contact(palette), encoding="utf-8")
 
-print("Generated 18 SVG assets for light and dark profiles.")
+print("Generated 40 SVG assets for light and dark profiles.")

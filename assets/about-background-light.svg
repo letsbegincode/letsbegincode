@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 214" role="img" aria-labelledby="title">
+<title id="title">Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.</title>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="1" y="1" width="418" height="212" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
+<text x="24" y="32" fill="#8a651f" font-size="12" font-weight="700" letter-spacing="1.4">EXPERIENCE &amp; FOUNDATIONS</text>
+<text x="24" y="77" fill="#20262e" font-size="29" font-weight="700">The path here.</text>
+<path d="M29 105v71" stroke="#8a651f" stroke-opacity=".3"/>
+<circle cx="29" cy="104" r="3" fill="#8a651f"/><text x="43" y="109" fill="#20262e" font-size="19" font-weight="700">Oracle</text><text x="152" y="109" fill="#56616e" font-size="16">Cloud &amp; DevOps</text><circle cx="29" cy="140" r="3" fill="#8a651f"/><text x="43" y="145" fill="#20262e" font-size="19" font-weight="700">IIT Ropar</text><text x="152" y="145" fill="#56616e" font-size="16">Full stack &amp; AI</text><circle cx="29" cy="176" r="3" fill="#8a651f"/><text x="43" y="181" fill="#20262e" font-size="19" font-weight="700">NIT Patna</text><text x="152" y="181" fill="#56616e" font-size="16">B.Tech · Computer Science</text>
+</g>
+</svg>
