@@ -1,18 +1,18 @@
 <p align="center">
   <a href="https://letsbegincode.github.io/">
-    <img src="assets/ars-logo.png" width="90" height="60" alt="ARS ? Abhinav Ranjan Sulabh" />
+    <img src="assets/ars-logo.png" width="90" height="60" alt="ARS — Abhinav Ranjan Sulabh" />
   </a>
 </p>
 
 <h1 align="center">Abhinav Ranjan Sulabh</h1>
-<p align="center"><strong>Software Engineer ? Backend Systems ? Cloud Infrastructure ? Applied ML</strong></p>
+<p align="center"><strong>Software Engineer · Backend Systems · Cloud Infrastructure · Applied ML</strong></p>
 
 <p align="center">
-  <a href="https://letsbegincode.github.io/">Portfolio</a> &nbsp;?&nbsp;
-  <a href="https://letsbegincode.github.io/general/Abhinav_Ranjan_Sulabh_Resume.pdf">Resume</a> &nbsp;?&nbsp;
-  <a href="https://www.linkedin.com/in/abhinav-ranjan-sulabh">LinkedIn</a> &nbsp;?&nbsp;
-  <a href="mailto:abhinavranjan.dev@gmail.com">Email</a> &nbsp;?&nbsp;
-  <a href="https://www.kaggle.com/rootpi3">Kaggle</a> &nbsp;?&nbsp;
+  <a href="https://letsbegincode.github.io/">Portfolio</a> &nbsp;&middot;&nbsp;
+  <a href="https://letsbegincode.github.io/general/Abhinav_Ranjan_Sulabh_Resume.pdf">Resume</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.linkedin.com/in/abhinav-ranjan-sulabh">LinkedIn</a> &nbsp;&middot;&nbsp;
+  <a href="mailto:abhinavranjan.dev@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+  <a href="https://www.kaggle.com/rootpi3">Kaggle</a> &nbsp;&middot;&nbsp;
   <a href="https://x.com/r_abhinav_s">X</a>
 </p>
 
@@ -31,10 +31,10 @@ I build with **Java and Python**, from database-backed APIs to cloud deployment 
 
 ### Tools I work with
 
-**Languages:** Java ? Python ? JavaScript ? SQL ? Bash  
-**Backend & data:** REST APIs ? JDBC ? MySQL ? MongoDB ? Authentication ? Caching  
-**Cloud & delivery:** Docker ? Kubernetes ? OpenShift ? Helm ? Prometheus ? CI/CD  
-**Applied ML:** Pandas ? Scikit-learn ? Forecasting ? Differential privacy
+**Languages:** Java · Python · JavaScript · SQL · Bash<br>
+**Backend & data:** REST APIs · JDBC · MySQL · MongoDB · Authentication · Caching<br>
+**Cloud & delivery:** Docker · Kubernetes · OpenShift · Helm · Prometheus · CI/CD<br>
+**Applied ML:** Pandas · Scikit-learn · Forecasting · Differential privacy
 
 ### GitHub activity
 
@@ -55,4 +55,4 @@ I build with **Java and Python**, from database-backed APIs to cloud deployment 
 
 ---
 
-[Explore my portfolio ?](https://letsbegincode.github.io/)
+[Explore my portfolio →](https://letsbegincode.github.io/)
