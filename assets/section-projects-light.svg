@@ -1,19 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 84" role="img" aria-labelledby="title">
-<title id="title">Selected work</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 68" role="img" aria-labelledby="title">
+<title id="title">Projects</title>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-<style>@media (max-width:600px) { .section-heading { font-size:44px; } .section-label { display:none; } }</style>
+<style>@media (max-width:600px) { .section-heading { font-size:40px; } }</style>
 <defs><linearGradient id="glow"><stop stop-color="#8a651f" stop-opacity=".08"/><stop offset="1" stop-color="#8a651f" stop-opacity="0"/></linearGradient>
 <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#56616e" opacity=".16"/></pattern></defs>
-<rect x="1" y="1" width="838" height="82" rx="14" fill="#f6f8fa" stroke="#d1d9e0"/>
-<rect x="2" y="2" width="836" height="80" rx="13" fill="url(#glow)"/>
-<rect x="610" y="2" width="228" height="80" rx="14" fill="url(#dots)"/>
+<rect x="1" y="1" width="838" height="66" rx="14" fill="#f6f8fa" stroke="#d1d9e0"/>
+<rect x="2" y="2" width="836" height="64" rx="13" fill="url(#glow)"/>
+<rect x="610" y="2" width="228" height="64" rx="14" fill="url(#dots)"/>
 <path d="M25 2h90" stroke="#8a651f" stroke-width="2"/>
-<text class="section-label" x="26" y="26" fill="#8a651f" font-size="11" letter-spacing="1.3">02 / PROJECTS</text>
-<text class="section-heading" x="24" y="60" fill="#20262e" font-size="26" font-weight="600">Selected work</text>
-<path d="M607 42h65m55 0h70" stroke="#8a651f" stroke-opacity=".3"/>
-<circle cx="700" cy="42" r="29" fill="#f6f8fa" stroke="#d1d9e0"/>
-<g transform="translate(684 26) scale(.57)" fill="none" stroke="#3e6c7c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="28" r="6"/><circle cx="8" cy="8" r="4"/><circle cx="48" cy="8" r="4"/><circle cx="8" cy="48" r="4"/><circle cx="48" cy="48" r="4"/><path d="m11 11 13 13m8 0 13-13M11 45l13-13m8 0 13 13"/></g>
-<circle cx="608" cy="42" r="3" fill="#8a651f"/>
-<circle cx="797" cy="42" r="3" fill="#3e6c7c"/>
+<text class="section-heading" x="24" y="44" fill="#20262e" font-size="23" font-weight="600">Projects</text>
+<path d="M607 34h65m55 0h70" stroke="#8a651f" stroke-opacity=".3"/>
+<circle cx="700" cy="34" r="25" fill="#f6f8fa" stroke="#d1d9e0"/>
+<g transform="translate(686 20) scale(.5)" fill="none" stroke="#3e6c7c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="28" r="6"/><circle cx="8" cy="8" r="4"/><circle cx="48" cy="8" r="4"/><circle cx="8" cy="48" r="4"/><circle cx="48" cy="48" r="4"/><path d="m11 11 13 13m8 0 13-13M11 45l13-13m8 0 13 13"/></g>
+<circle cx="608" cy="34" r="3" fill="#8a651f"/>
+<circle cx="797" cy="34" r="3" fill="#3e6c7c"/>
 </g>
 </svg>

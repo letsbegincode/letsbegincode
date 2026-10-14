@@ -41,11 +41,11 @@ def banner(p):
 <rect x="560" y="2" width="438" height="276" rx="22" fill="url(#grid)"/>
 <ellipse cx="785" cy="140" rx="290" ry="170" fill="url(#glow)"/>
 <path d="M40 1h220" stroke="url(#edge)" stroke-width="3"/>
-<text x="48" y="54" fill="{p['gold']}" font-size="14" letter-spacing="2.5">SOFTWARE ENGINEER</text>
-<text x="46" y="124" fill="{p['ink']}" font-size="42" font-weight="600" letter-spacing="-.7">Abhinav Ranjan</text>
-<text x="46" y="178" fill="{p['gold']}" font-size="46" font-weight="600" letter-spacing="-.7">Sulabh.</text>
+<text x="48" y="54" fill="{p['gold']}" font-size="14">Software engineer</text>
+<text x="46" y="124" fill="{p['ink']}" font-size="38" font-weight="600" letter-spacing="-.5">Abhinav Ranjan</text>
+<text x="46" y="178" fill="{p['gold']}" font-size="42" font-weight="600" letter-spacing="-.5">Sulabh.</text>
 <path d="M48 222h55" stroke="{p['gold']}" stroke-width="2"/>
-<text x="118" y="227" fill="{p['muted']}" font-size="16">Systems. Cloud. Applied intelligence.</text>
+<text x="118" y="227" fill="{p['muted']}" font-size="15">Java, Python, and backend systems.</text>
 <g transform="translate(115 0) scale(.82)">
 <g fill="none" stroke="{p['gold']}" stroke-opacity=".32">
   <circle cx="808" cy="168" r="105"/>
@@ -70,10 +70,10 @@ def banner(p):
 
 
 PROJECTS = [
-    ("banking", "01", "BACKEND SYSTEMS", "Core Banking Engine", ("Banking APIs, transactions,", "persistence, and TTL caching."), ("Java", "JDBC", "MySQL"), "bank"),
-    ("dns", "02", "NETWORKING", "DNS Resolution Engine", ("Hierarchical resolution,", "caching, and DNSSEC concepts."), ("Java", "DNS", "Caching"), "network"),
-    ("forecasting", "03", "APPLIED MACHINE LEARNING", "Power Price Forecasting", ("From public data ingestion", "to validated price forecasts."), ("Python", "Pandas", "Scikit-learn"), "chart"),
-    ("federated", "04", "PRIVACY & SECURITY", "Federated Intrusion Detection", ("Collaborative model training", "with differential privacy."), ("Python", "Federated ML", "Privacy"), "shield"),
+    ("banking", "01", "Backend", "Banking System", ("Java banking APIs with JDBC", "persistence and TTL caching."), ("Java", "JDBC", "MySQL"), "bank"),
+    ("dns", "02", "Networking", "DNS in Java", ("DNS resolution, caching,", "and DNSSEC concepts."), ("Java", "DNS", "Caching"), "network"),
+    ("forecasting", "03", "Forecasting", "Power Price Forecasting", ("A Python pipeline for power", "price forecasts and validation."), ("Python", "Pandas", "Scikit-learn"), "chart"),
+    ("federated", "04", "Machine learning", "Federated Intrusion Detection", ("Network intrusion detection", "with differential privacy."), ("Python", "Federated ML", "Privacy"), "shield"),
 ]
 
 
@@ -85,7 +85,7 @@ def project(p, entry):
         "chart": '<path d="M5 5v44h46M10 39l10-13 10 6 17-23m-9 0h9v9"/>',
         "shield": '<path d="m28 3 21 8v17c0 14-21 24-21 24S7 42 7 28V11Z"/><path d="m17 27 8 8 14-17"/>',
     }[icon]
-    title_size = 18 if len(title) > 25 else 20
+    title_size = 17 if len(title) > 25 else 18
     pills = []
     x = 24
     for tag in tags:
@@ -96,12 +96,12 @@ def project(p, entry):
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{p['gold']}" stop-opacity=".08"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient></defs>
 <rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
 <rect x="2" y="2" width="416" height="186" rx="14" fill="url(#wash)"/>
-<text x="24" y="31" fill="{p['gold']}" font-size="11" font-weight="700" letter-spacing="1.2">{number} / {escape(category)}</text>
+<text x="24" y="31" fill="{p['gold']}" font-size="12">{escape(category)}</text>
 <path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="{p['gold']}" stroke-width="1.7"/>
 <g transform="translate(346 91)" fill="none" stroke="{p['blue']}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45">{artwork}</g>
 <text x="24" y="68" fill="{p['ink']}" font-size="{title_size}" font-weight="600">{escape(title)}</text>
-<text x="24" y="104" fill="{p['muted']}" font-size="16">{escape(description[0])}</text>
-<text x="24" y="128" fill="{p['muted']}" font-size="16">{escape(description[1])}</text>
+<text x="24" y="104" fill="{p['muted']}" font-size="15">{escape(description[0])}</text>
+<text x="24" y="128" fill="{p['muted']}" font-size="15">{escape(description[1])}</text>
 {''.join(pills)}
 ''')
 
@@ -122,10 +122,10 @@ ICONS = {
     "activity": '<path d="M3 29h11l7-19 13 37 7-18h12"/>',
 }
 SECTIONS = [
-    ("about", "01", "Behind the code", "code"),
-    ("projects", "02", "Selected work", "network"),
-    ("toolkit", "03", "My toolkit", "cloud"),
-    ("activity", "04", "GitHub activity", "activity"),
+    ("about", "01", "About me", "code"),
+    ("projects", "02", "Projects", "network"),
+    ("toolkit", "03", "Tools I use", "cloud"),
+    ("activity", "04", "On GitHub", "activity"),
 ]
 TOOLKIT = [
     ("languages", "Languages", ("Java · Python · SQL", "JavaScript · Bash"), "code"),
@@ -137,22 +137,20 @@ TOOLKIT = [
 
 def section(p, entry):
     slug, number, title, icon = entry
-    label = {"about": "EXPERIENCE", "projects": "PROJECTS", "toolkit": "TECHNOLOGIES", "activity": "PUBLIC ACTIVITY"}[slug]
-    return document(840, 84, title, f'''
-<style>@media (max-width:600px) {{ .section-heading {{ font-size:44px; }} .section-label {{ display:none; }} }}</style>
+    return document(840, 68, title, f'''
+<style>@media (max-width:600px) {{ .section-heading {{ font-size:40px; }} }}</style>
 <defs><linearGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".08"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient>
 <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="{p['muted']}" opacity=".16"/></pattern></defs>
-<rect x="1" y="1" width="838" height="82" rx="14" fill="{p['bg']}" stroke="{p['line']}"/>
-<rect x="2" y="2" width="836" height="80" rx="13" fill="url(#glow)"/>
-<rect x="610" y="2" width="228" height="80" rx="14" fill="url(#dots)"/>
+<rect x="1" y="1" width="838" height="66" rx="14" fill="{p['bg']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="836" height="64" rx="13" fill="url(#glow)"/>
+<rect x="610" y="2" width="228" height="64" rx="14" fill="url(#dots)"/>
 <path d="M25 2h90" stroke="{p['gold']}" stroke-width="2"/>
-<text class="section-label" x="26" y="26" fill="{p['gold']}" font-size="11" letter-spacing="1.3">{number} / {label}</text>
-<text class="section-heading" x="24" y="60" fill="{p['ink']}" font-size="26" font-weight="600">{title}</text>
-<path d="M607 42h65m55 0h70" stroke="{p['gold']}" stroke-opacity=".3"/>
-<circle cx="700" cy="42" r="29" fill="{p['bg']}" stroke="{p['line']}"/>
-<g transform="translate(684 26) scale(.57)" fill="none" stroke="{p['blue']}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
-<circle cx="608" cy="42" r="3" fill="{p['gold']}"/>
-<circle cx="797" cy="42" r="3" fill="{p['blue']}"/>
+<text class="section-heading" x="24" y="44" fill="{p['ink']}" font-size="23" font-weight="600">{title}</text>
+<path d="M607 34h65m55 0h70" stroke="{p['gold']}" stroke-opacity=".3"/>
+<circle cx="700" cy="34" r="25" fill="{p['bg']}" stroke="{p['line']}"/>
+<g transform="translate(686 20) scale(.5)" fill="none" stroke="{p['blue']}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
+<circle cx="608" cy="34" r="3" fill="{p['gold']}"/>
+<circle cx="797" cy="34" r="3" fill="{p['blue']}"/>
 ''')
 
 
@@ -162,11 +160,11 @@ def toolkit(p, entry):
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{p['gold']}" stop-opacity=".07"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient></defs>
 <rect x="1" y="1" width="418" height="150" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
 <rect x="2" y="2" width="416" height="148" rx="13" fill="url(#wash)"/>
-<text x="24" y="40" fill="{p['ink']}" font-size="20" font-weight="600">{escape(title)}</text>
+<text x="24" y="40" fill="{p['ink']}" font-size="18" font-weight="600">{escape(title)}</text>
 <g transform="translate(351 17) scale(.65)" fill="none" stroke="{p['blue']}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
 <path d="M24 62h40" stroke="{p['gold']}" stroke-width="2"/>
-<text x="24" y="92" fill="{p['muted']}" font-size="16">{escape(lines[0])}</text>
-<text x="24" y="120" fill="{p['muted']}" font-size="16">{escape(lines[1])}</text>
+<text x="24" y="92" fill="{p['muted']}" font-size="15">{escape(lines[0])}</text>
+<text x="24" y="120" fill="{p['muted']}" font-size="15">{escape(lines[1])}</text>
 ''')
 
 
@@ -176,8 +174,8 @@ def current_role(p):
 <rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
 <ellipse cx="338" cy="62" rx="140" ry="105" fill="url(#halo)"/>
 <circle cx="30" cy="28" r="4" fill="{p['gold']}"/>
-<text x="43" y="32" fill="{p['gold']}" font-size="11" font-weight="600" letter-spacing="1.2">CURRENT CHAPTER</text>
-<text x="24" y="68" fill="{p['ink']}" font-size="24" font-weight="600">Airbnb</text>
+<text x="43" y="32" fill="{p['gold']}" font-size="12">Current role</text>
+<text x="24" y="68" fill="{p['ink']}" font-size="22" font-weight="600">Airbnb</text>
 <text x="24" y="96" fill="{p['muted']}" font-size="15">Contracted via Altimetrik</text>
 <text x="24" y="127" fill="{p['ink']}" font-size="16">Payments risk &amp; alerting</text>
 <text x="24" y="151" fill="{p['muted']}" font-size="15">APIs, logs, and monitoring</text>
@@ -193,22 +191,21 @@ def background(p):
         content.append(f'<circle cx="29" cy="{y-5}" r="3" fill="{p["gold"]}"/><text x="43" y="{y}" fill="{p["ink"]}" font-size="16" font-weight="600">{company}</text><text x="152" y="{y}" fill="{p["muted"]}" font-size="14">{escape(detail)}</text>')
     return document(420, 190, "Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.", f'''
 <rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
-<text x="24" y="32" fill="{p['gold']}" font-size="11" font-weight="600" letter-spacing="1.2">EXPERIENCE &amp; FOUNDATIONS</text>
-<text x="24" y="68" fill="{p['ink']}" font-size="22" font-weight="600">The path here.</text>
+<text x="24" y="32" fill="{p['gold']}" font-size="12">Background</text>
+<text x="24" y="68" fill="{p['ink']}" font-size="20" font-weight="600">Before Airbnb</text>
 <path d="M29 99v59" stroke="{p['gold']}" stroke-opacity=".3"/>
 {''.join(content)}
 ''')
 
 
 def contact(p):
-    return document(840, 138, "Let's build something useful. Explore my portfolio or get in touch.", f'''
-<style>@media (max-width:600px) {{ .contact-heading {{ font-size:40px; }} .contact-label {{ display:none; }} }}</style>
+    return document(840, 138, "Have a question about my work? You can reach me by email.", f'''
+<style>@media (max-width:600px) {{ .contact-heading {{ font-size:34px; }} .contact-detail {{ font-size:25px; }} }}</style>
 <defs><radialGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".14"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient></defs>
 <rect x="1" y="1" width="838" height="136" rx="16" fill="{p['bg']}" stroke="{p['line']}"/>
 <ellipse cx="720" cy="70" rx="175" ry="100" fill="url(#glow)"/>
-<text class="contact-label" x="30" y="29" fill="{p['gold']}" font-size="11" letter-spacing="1.3">LET'S CONNECT</text>
-<text class="contact-heading" x="28" y="78" fill="{p['ink']}" font-size="28" font-weight="600">Let's build something</text>
-<text class="contact-heading" x="28" y="112" fill="{p['gold']}" font-size="28" font-weight="600">useful.</text>
+<text class="contact-heading" x="28" y="62" fill="{p['ink']}" font-size="24" font-weight="600">Have a question about my work?</text>
+<text class="contact-detail" x="28" y="101" fill="{p['muted']}" font-size="16">You can reach me by email.</text>
 <circle cx="739" cy="70" r="47" fill="none" stroke="{p['gold']}" stroke-opacity=".25"/>
 <g transform="translate(688 32) scale(1.1)">{MONOGRAM.format(gold=p['gold'])}</g>
 <path d="M618 70h74m94 0h30" stroke="{p['gold']}" stroke-opacity=".3"/>

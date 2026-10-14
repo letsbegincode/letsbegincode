@@ -16,11 +16,11 @@
 <rect x="560" y="2" width="438" height="276" rx="22" fill="url(#grid)"/>
 <ellipse cx="785" cy="140" rx="290" ry="170" fill="url(#glow)"/>
 <path d="M40 1h220" stroke="url(#edge)" stroke-width="3"/>
-<text x="48" y="54" fill="#8a651f" font-size="14" letter-spacing="2.5">SOFTWARE ENGINEER</text>
-<text x="46" y="124" fill="#20262e" font-size="42" font-weight="600" letter-spacing="-.7">Abhinav Ranjan</text>
-<text x="46" y="178" fill="#8a651f" font-size="46" font-weight="600" letter-spacing="-.7">Sulabh.</text>
+<text x="48" y="54" fill="#8a651f" font-size="14">Software engineer</text>
+<text x="46" y="124" fill="#20262e" font-size="38" font-weight="600" letter-spacing="-.5">Abhinav Ranjan</text>
+<text x="46" y="178" fill="#8a651f" font-size="42" font-weight="600" letter-spacing="-.5">Sulabh.</text>
 <path d="M48 222h55" stroke="#8a651f" stroke-width="2"/>
-<text x="118" y="227" fill="#56616e" font-size="16">Systems. Cloud. Applied intelligence.</text>
+<text x="118" y="227" fill="#56616e" font-size="15">Java, Python, and backend systems.</text>
 <g transform="translate(115 0) scale(.82)">
 <g fill="none" stroke="#8a651f" stroke-opacity=".32">
   <circle cx="808" cy="168" r="105"/>

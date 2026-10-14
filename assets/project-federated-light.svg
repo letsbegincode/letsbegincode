@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" role="img" aria-labelledby="title">
-<title id="title">Federated Intrusion Detection. Collaborative model training with differential privacy.</title>
+<title id="title">Federated Intrusion Detection. Network intrusion detection with differential privacy.</title>
 <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8a651f" stop-opacity=".08"/><stop offset="1" stop-color="#8a651f" stop-opacity="0"/></linearGradient></defs>
 <rect x="1" y="1" width="418" height="188" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
 <rect x="2" y="2" width="416" height="186" rx="14" fill="url(#wash)"/>
-<text x="24" y="31" fill="#8a651f" font-size="11" font-weight="700" letter-spacing="1.2">04 / PRIVACY &amp; SECURITY</text>
+<text x="24" y="31" fill="#8a651f" font-size="12">Machine learning</text>
 <path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="#8a651f" stroke-width="1.7"/>
 <g transform="translate(346 91)" fill="none" stroke="#3e6c7c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="m28 3 21 8v17c0 14-21 24-21 24S7 42 7 28V11Z"/><path d="m17 27 8 8 14-17"/></g>
-<text x="24" y="68" fill="#20262e" font-size="18" font-weight="600">Federated Intrusion Detection</text>
-<text x="24" y="104" fill="#56616e" font-size="16">Collaborative model training</text>
-<text x="24" y="128" fill="#56616e" font-size="16">with differential privacy.</text>
+<text x="24" y="68" fill="#20262e" font-size="17" font-weight="600">Federated Intrusion Detection</text>
+<text x="24" y="104" fill="#56616e" font-size="15">Network intrusion detection</text>
+<text x="24" y="128" fill="#56616e" font-size="15">with differential privacy.</text>
 <rect x="24" y="151" width="64" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="35" y="167" fill="#56616e" font-size="12">Python</text><rect x="96" y="151" width="106" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="107" y="167" fill="#56616e" font-size="12">Federated ML</text><rect x="210" y="151" width="71" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="221" y="167" fill="#56616e" font-size="12">Privacy</text>
 </g>
 </svg>
