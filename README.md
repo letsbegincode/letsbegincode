@@ -1,44 +1,43 @@
-<p align="center">
-  <a href="https://letsbegincode.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/banner-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/banner-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/banner-light.svg?v=20261015" width="1000" alt="Abhinav Ranjan Sulabh - Software Engineer. Java, Python, and backend systems." /></picture></a>
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-dark.svg?v=20261015-native" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-light.svg?v=20261015-native" /><img align="right" src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-light.svg?v=20261015-native" width="84" height="55" alt="ARS monogram" /></picture>
 
-<p align="center">
-  <a href="https://letsbegincode.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015" width="116" alt="Portfolio" /></picture></a>
-  <a href="https://letsbegincode.github.io/general/Abhinav_Ranjan_Sulabh_Resume.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-resume-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-resume-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-resume-light.svg?v=20261015" width="116" alt="Resume" /></picture></a>
-  <a href="https://www.linkedin.com/in/abhinav-ranjan-sulabh"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-linkedin-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-linkedin-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-linkedin-light.svg?v=20261015" width="116" alt="LinkedIn" /></picture></a>
-  <a href="mailto:abhinavranjan.dev@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-light.svg?v=20261015" width="116" alt="Email" /></picture></a>
-</p>
-<p align="center">
-  <a href="https://www.kaggle.com/rootpi3">Kaggle</a> &nbsp;&middot;&nbsp;
-  <a href="https://x.com/r_abhinav_s">X / Twitter</a>
-</p>
+## Abhinav Ranjan Sulabh
 
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-about-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-about-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-about-light.svg?v=20261015" width="840" alt="About me" /></picture></h2>
+Software engineer · Java & Python · NIT Patna
 
-<p>I'm Abhinav, a software engineer from NIT Patna. I work mainly with Java and Python.</p>
+[Portfolio](https://letsbegincode.github.io/) · [Resume](https://letsbegincode.github.io/general/Abhinav_Ranjan_Sulabh_Resume.pdf) · [LinkedIn](https://www.linkedin.com/in/abhinav-ranjan-sulabh) · [Email](mailto:abhinavranjan.dev@gmail.com)
 
-<p>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-current-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-current-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-current-light.svg?v=20261015" width="390" alt="Current role: Software Engineer at Airbnb, contracted via Altimetrik. Payments risk and alerting. August 2026 to present." /></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-background-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-background-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/about-background-light.svg?v=20261015" width="390" alt="Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna." /></picture>
-</p>
+### About me
 
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-projects-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-projects-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-projects-light.svg?v=20261015" width="840" alt="Projects" /></picture></h2>
+I work mainly with Java and Python. My work and projects span backend systems, cloud infrastructure, and machine learning.
 
-<p>
-<a href="https://github.com/letsbegincode/Banking-System"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-banking-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-banking-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-banking-light.svg?v=20261015" width="390" alt="Banking System: Java banking APIs, transactions, JDBC persistence, and TTL caching." /></picture></a>
-<a href="https://github.com/letsbegincode/dns-system-java"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-dns-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-dns-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-dns-light.svg?v=20261015" width="390" alt="DNS in Java: Java DNS hierarchy, resolution, caching, and DNSSEC concepts." /></picture></a>
-<a href="https://github.com/letsbegincode/european-power-fair-value-forecasting"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-forecasting-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-forecasting-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-forecasting-light.svg?v=20261015" width="390" alt="Power Price Forecasting: Python data ingestion, quality checks, and model validation." /></picture></a>
-<a href="https://github.com/letsbegincode/Fed_IIDS"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-federated-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-federated-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/project-federated-light.svg?v=20261015" width="390" alt="Federated Intrusion Detection: collaborative model training with differential privacy." /></picture></a>
-</p>
+- **Airbnb, via Altimetrik** — Software Engineer, August 2026–present. I work on payments risk and alerting, including APIs, logs, and monitoring.
+- **Oracle** — Cloud Infrastructure & DevOps Intern. Worked with Kubernetes, OpenShift, Helm, and Prometheus.
+- **IIT Ropar** — Software Development Intern. Worked on a student platform with full-stack and AI features.
+- **NIT Patna** — B.Tech in Computer Science and Engineering, 2022–2026.
 
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-toolkit-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-toolkit-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-toolkit-light.svg?v=20261015" width="840" alt="Tools I use" /></picture></h2>
+### Projects
 
-<p>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-languages-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-languages-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-languages-light.svg?v=20261015" width="390" alt="Languages: Java, Python, SQL, JavaScript, and Bash." /></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-backend-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-backend-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-backend-light.svg?v=20261015" width="390" alt="Backend and data: REST APIs, JDBC, MySQL, authentication, caching, and MongoDB." /></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-cloud-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-cloud-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-cloud-light.svg?v=20261015" width="390" alt="Cloud and delivery: Docker, Kubernetes, Helm, OpenShift, Prometheus, and CI/CD." /></picture>
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-ml-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-ml-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/toolkit-ml-light.svg?v=20261015" width="390" alt="Applied ML: Pandas, Scikit-learn, forecasting, and differential privacy." /></picture>
-</p>
+<p><strong><a href="https://github.com/letsbegincode/Banking-System">Banking System</a></strong><br>Java banking APIs for accounts and transactions, with JDBC persistence and TTL caching.<br>Java · JDBC · MySQL</p>
+
+<p><strong><a href="https://github.com/letsbegincode/dns-system-java">DNS in Java</a></strong><br>A DNS implementation for exploring hierarchical resolution, caching, and DNSSEC concepts.<br>Java · DNS · Caching</p>
+
+<p><strong><a href="https://github.com/letsbegincode/european-power-fair-value-forecasting">Power Price Forecasting</a></strong><br>A Python pipeline for power price forecasting, from data ingestion and quality checks to model validation.<br>Python · Pandas · Scikit-learn</p>
+
+<p><strong><a href="https://github.com/letsbegincode/Fed_IIDS">Federated Intrusion Detection</a></strong><br>Network intrusion detection using federated learning and differential privacy.<br>Python · Federated learning · Differential privacy</p>
+
+### Tools I use
+
+#### Languages
+Java · Python · SQL · JavaScript · Bash
+
+#### Backend & data
+REST APIs · JDBC · MySQL · Authentication · Caching · MongoDB
+
+#### Cloud & delivery
+Docker · Kubernetes · Helm · OpenShift · Prometheus · CI/CD
+
+#### Applied ML
+Pandas · Scikit-learn · Forecasting · Differential privacy
 
 <details>
 <summary>Computer science fundamentals</summary>
@@ -47,16 +46,17 @@ Data structures and algorithms, operating systems, computer networks, multithrea
 
 </details>
 
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-activity-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-activity-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/section-activity-light.svg?v=20261015" width="840" alt="On GitHub" /></picture></h2>
+### On GitHub
 
 <p>
 <picture><source media="(prefers-color-scheme: dark)" srcset="profile/stats-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="profile/stats-light.svg" /><img src="profile/stats-light.svg" width="390" alt="GitHub statistics for letsbegincode: stars, commits, pull requests, issues, and contributions." /></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="profile/languages-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="profile/languages-light.svg" /><img src="profile/languages-light.svg" width="390" alt="Language distribution across public repositories." /></picture>
 </p>
 
-<p align="center"><sub>Updated daily. Language percentages come from repository code.</sub></p>
+<sub>Updated daily. Language percentages come from repository code.</sub>
 
-<h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/contact-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/contact-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/contact-light.svg?v=20261015" width="840" alt="Have a question about my work? You can reach me by email." /></picture></h2>
+### Elsewhere
 
-<p align="center"><a href="https://letsbegincode.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015" width="116" alt="Explore my portfolio" /></picture></a>
-<a href="mailto:abhinavranjan.dev@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-dark.svg?v=20261015" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-light.svg?v=20261015" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-email-light.svg?v=20261015" width="116" alt="Get in touch by email" /></picture></a></p>
+[Kaggle](https://www.kaggle.com/rootpi3) · [X / Twitter](https://x.com/r_abhinav_s)
+
+Have a question about my work? [Send me an email](mailto:abhinavranjan.dev@gmail.com).
