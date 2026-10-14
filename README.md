@@ -1,6 +1,6 @@
 <h2><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-dark.svg?v=20261015-native" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-light.svg?v=20261015-native" /><img align="right" src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/ars-logo-light.svg?v=20261015-native" width="54" height="35" alt="ARS monogram" /></picture>Abhinav Ranjan Sulabh</h2>
 
-**Software engineer · NIT Patna**
+**Software engineer**
 
 I like understanding how things work and building software that makes them work better.
 
