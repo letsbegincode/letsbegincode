@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 214" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" role="img" aria-labelledby="title">
 <title id="title">Power Price Forecasting. From public data ingestion to validated price forecasts.</title>
-<g font-family="Arial, Helvetica, sans-serif">
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8a651f" stop-opacity=".08"/><stop offset="1" stop-color="#8a651f" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="1" width="418" height="212" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
-<rect x="2" y="2" width="416" height="210" rx="14" fill="url(#wash)"/>
+<rect x="1" y="1" width="418" height="188" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
+<rect x="2" y="2" width="416" height="186" rx="14" fill="url(#wash)"/>
 <text x="24" y="31" fill="#8a651f" font-size="11" font-weight="700" letter-spacing="1.2">03 / APPLIED MACHINE LEARNING</text>
 <path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="#8a651f" stroke-width="1.7"/>
-<g transform="translate(346 102)" fill="none" stroke="#3e6c7c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="M5 5v44h46M10 39l10-13 10 6 17-23m-9 0h9v9"/></g>
-<text x="24" y="77" fill="#20262e" font-size="26" font-weight="700" letter-spacing="-.7">Power Price Forecasting</text>
-<text x="24" y="113" fill="#56616e" font-size="18">From public data ingestion</text>
-<text x="24" y="138" fill="#56616e" font-size="18">to validated price forecasts.</text>
-<rect x="24" y="168" width="65.8" height="25" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="35" y="185" fill="#56616e" font-size="13">Python</text><rect x="97.8" y="168" width="65.8" height="25" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="108.8" y="185" fill="#56616e" font-size="13">Pandas</text><rect x="171.6" y="168" width="109.6" height="25" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="182.6" y="185" fill="#56616e" font-size="13">Scikit-learn</text>
+<g transform="translate(346 91)" fill="none" stroke="#3e6c7c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="M5 5v44h46M10 39l10-13 10 6 17-23m-9 0h9v9"/></g>
+<text x="24" y="68" fill="#20262e" font-size="20" font-weight="600">Power Price Forecasting</text>
+<text x="24" y="104" fill="#56616e" font-size="16">From public data ingestion</text>
+<text x="24" y="128" fill="#56616e" font-size="16">to validated price forecasts.</text>
+<rect x="24" y="151" width="64" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="35" y="167" fill="#56616e" font-size="12">Python</text><rect x="96" y="151" width="64" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="107" y="167" fill="#56616e" font-size="12">Pandas</text><rect x="168" y="151" width="106" height="23" rx="6" fill="#f6f8fa" stroke="#d1d9e0"/><text x="179" y="167" fill="#56616e" font-size="12">Scikit-learn</text>
 </g>
 </svg>

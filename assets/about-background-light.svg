@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 214" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" role="img" aria-labelledby="title">
 <title id="title">Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.</title>
-<g font-family="Arial, Helvetica, sans-serif">
-<rect x="1" y="1" width="418" height="212" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
-<text x="24" y="32" fill="#8a651f" font-size="12" font-weight="700" letter-spacing="1.4">EXPERIENCE &amp; FOUNDATIONS</text>
-<text x="24" y="77" fill="#20262e" font-size="29" font-weight="700">The path here.</text>
-<path d="M29 105v71" stroke="#8a651f" stroke-opacity=".3"/>
-<circle cx="29" cy="104" r="3" fill="#8a651f"/><text x="43" y="109" fill="#20262e" font-size="19" font-weight="700">Oracle</text><text x="152" y="109" fill="#56616e" font-size="16">Cloud &amp; DevOps</text><circle cx="29" cy="140" r="3" fill="#8a651f"/><text x="43" y="145" fill="#20262e" font-size="19" font-weight="700">IIT Ropar</text><text x="152" y="145" fill="#56616e" font-size="16">Full stack &amp; AI</text><circle cx="29" cy="176" r="3" fill="#8a651f"/><text x="43" y="181" fill="#20262e" font-size="19" font-weight="700">NIT Patna</text><text x="152" y="181" fill="#56616e" font-size="16">B.Tech · Computer Science</text>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+<rect x="1" y="1" width="418" height="188" rx="14" fill="#ffffff" stroke="#d1d9e0"/>
+<text x="24" y="32" fill="#8a651f" font-size="11" font-weight="600" letter-spacing="1.2">EXPERIENCE &amp; FOUNDATIONS</text>
+<text x="24" y="68" fill="#20262e" font-size="22" font-weight="600">The path here.</text>
+<path d="M29 99v59" stroke="#8a651f" stroke-opacity=".3"/>
+<circle cx="29" cy="98" r="3" fill="#8a651f"/><text x="43" y="103" fill="#20262e" font-size="16" font-weight="600">Oracle</text><text x="152" y="103" fill="#56616e" font-size="14">Cloud &amp; DevOps</text><circle cx="29" cy="128" r="3" fill="#8a651f"/><text x="43" y="133" fill="#20262e" font-size="16" font-weight="600">IIT Ropar</text><text x="152" y="133" fill="#56616e" font-size="14">Full stack &amp; AI</text><circle cx="29" cy="158" r="3" fill="#8a651f"/><text x="43" y="163" fill="#20262e" font-size="16" font-weight="600">NIT Patna</text><text x="152" y="163" fill="#56616e" font-size="14">B.Tech · Computer Science</text>
 </g>
 </svg>

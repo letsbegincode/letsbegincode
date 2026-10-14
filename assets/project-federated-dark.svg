@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 214" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" role="img" aria-labelledby="title">
 <title id="title">Federated Intrusion Detection. Collaborative model training with differential privacy.</title>
-<g font-family="Arial, Helvetica, sans-serif">
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dfbd78" stop-opacity=".08"/><stop offset="1" stop-color="#dfbd78" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="1" width="418" height="212" rx="14" fill="#171b20" stroke="#343a42"/>
-<rect x="2" y="2" width="416" height="210" rx="14" fill="url(#wash)"/>
+<rect x="1" y="1" width="418" height="188" rx="14" fill="#171b20" stroke="#343a42"/>
+<rect x="2" y="2" width="416" height="186" rx="14" fill="url(#wash)"/>
 <text x="24" y="31" fill="#dfbd78" font-size="11" font-weight="700" letter-spacing="1.2">04 / PRIVACY &amp; SECURITY</text>
 <path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="#dfbd78" stroke-width="1.7"/>
-<g transform="translate(346 102)" fill="none" stroke="#83a9b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="m28 3 21 8v17c0 14-21 24-21 24S7 42 7 28V11Z"/><path d="m17 27 8 8 14-17"/></g>
-<text x="24" y="77" fill="#f3f1ec" font-size="23" font-weight="700" letter-spacing="-.7">Federated Intrusion Detection</text>
-<text x="24" y="113" fill="#b3b6ba" font-size="18">Collaborative model training</text>
-<text x="24" y="138" fill="#b3b6ba" font-size="18">with differential privacy.</text>
-<rect x="24" y="168" width="65.8" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="35" y="185" fill="#b3b6ba" font-size="13">Python</text><rect x="97.8" y="168" width="109.6" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="108.8" y="185" fill="#b3b6ba" font-size="13">Federated ML</text><rect x="215.39999999999998" y="168" width="73.1" height="25" rx="6" fill="#111315" stroke="#343a42"/><text x="226.39999999999998" y="185" fill="#b3b6ba" font-size="13">Privacy</text>
+<g transform="translate(346 91)" fill="none" stroke="#83a9b8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45"><path d="m28 3 21 8v17c0 14-21 24-21 24S7 42 7 28V11Z"/><path d="m17 27 8 8 14-17"/></g>
+<text x="24" y="68" fill="#f3f1ec" font-size="18" font-weight="600">Federated Intrusion Detection</text>
+<text x="24" y="104" fill="#b3b6ba" font-size="16">Collaborative model training</text>
+<text x="24" y="128" fill="#b3b6ba" font-size="16">with differential privacy.</text>
+<rect x="24" y="151" width="64" height="23" rx="6" fill="#111315" stroke="#343a42"/><text x="35" y="167" fill="#b3b6ba" font-size="12">Python</text><rect x="96" y="151" width="106" height="23" rx="6" fill="#111315" stroke="#343a42"/><text x="107" y="167" fill="#b3b6ba" font-size="12">Federated ML</text><rect x="210" y="151" width="71" height="23" rx="6" fill="#111315" stroke="#343a42"/><text x="221" y="167" fill="#b3b6ba" font-size="12">Privacy</text>
 </g>
 </svg>

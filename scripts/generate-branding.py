@@ -20,12 +20,12 @@ MONOGRAM = '''<g fill="none" stroke="{gold}" stroke-width="4" stroke-linecap="sq
 def document(width, height, title, body):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title">
 <title id="title">{escape(title)}</title>
-<g font-family="Arial, Helvetica, sans-serif">{body}</g>
+<g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">{body}</g>
 </svg>\n'''
 
 
 def banner(p):
-    return document(1000, 340, "Abhinav Ranjan Sulabh — Software Engineer", f'''
+    return document(1000, 280, "Abhinav Ranjan Sulabh — Software Engineer", f'''
 <defs>
   <radialGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".15"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="{p['muted']}" opacity=".17"/></pattern>
@@ -37,15 +37,16 @@ def banner(p):
   @keyframes breathe {{ 0%,100% {{ opacity:.4; }} 50% {{ opacity:1; }} }}
   @media (prefers-reduced-motion: reduce) {{ .pulse {{ animation:none; }} }}
 </style>
-<rect x="1" y="1" width="998" height="338" rx="22" fill="{p['bg']}" stroke="{p['line']}"/>
-<rect x="560" y="2" width="438" height="336" rx="22" fill="url(#grid)"/>
-<ellipse cx="785" cy="176" rx="290" ry="205" fill="url(#glow)"/>
+<rect x="1" y="1" width="998" height="278" rx="22" fill="{p['bg']}" stroke="{p['line']}"/>
+<rect x="560" y="2" width="438" height="276" rx="22" fill="url(#grid)"/>
+<ellipse cx="785" cy="140" rx="290" ry="170" fill="url(#glow)"/>
 <path d="M40 1h220" stroke="url(#edge)" stroke-width="3"/>
-<text x="48" y="62" fill="{p['gold']}" font-size="17" letter-spacing="4">SOFTWARE ENGINEER</text>
-<text x="44" y="150" fill="{p['ink']}" font-size="64" font-weight="700" letter-spacing="-2">Abhinav Ranjan</text>
-<text x="44" y="224" fill="{p['gold']}" font-size="72" font-weight="700" letter-spacing="-2">Sulabh.</text>
-<path d="M48 268h70" stroke="{p['gold']}" stroke-width="3"/>
-<text x="135" y="274" fill="{p['muted']}" font-size="19">Systems. Cloud. Applied intelligence.</text>
+<text x="48" y="54" fill="{p['gold']}" font-size="14" letter-spacing="2.5">SOFTWARE ENGINEER</text>
+<text x="46" y="124" fill="{p['ink']}" font-size="42" font-weight="600" letter-spacing="-.7">Abhinav Ranjan</text>
+<text x="46" y="178" fill="{p['gold']}" font-size="46" font-weight="600" letter-spacing="-.7">Sulabh.</text>
+<path d="M48 222h55" stroke="{p['gold']}" stroke-width="2"/>
+<text x="118" y="227" fill="{p['muted']}" font-size="16">Systems. Cloud. Applied intelligence.</text>
+<g transform="translate(115 0) scale(.82)">
 <g fill="none" stroke="{p['gold']}" stroke-opacity=".32">
   <circle cx="808" cy="168" r="105"/>
   <circle cx="808" cy="168" r="125" stroke-dasharray="3 10"/>
@@ -64,6 +65,7 @@ def banner(p):
 </g>
 <circle class="pulse" cx="703" cy="168" r="4" fill="{p['gold']}"/>
 <circle class="pulse second" cx="913" cy="168" r="4" fill="{p['blue']}"/>
+</g>
 ''')
 
 
@@ -83,23 +85,23 @@ def project(p, entry):
         "chart": '<path d="M5 5v44h46M10 39l10-13 10 6 17-23m-9 0h9v9"/>',
         "shield": '<path d="m28 3 21 8v17c0 14-21 24-21 24S7 42 7 28V11Z"/><path d="m17 27 8 8 14-17"/>',
     }[icon]
-    title_size = 23 if len(title) > 25 else 26
+    title_size = 18 if len(title) > 25 else 20
     pills = []
     x = 24
     for tag in tags:
-        width = len(tag) * 7.3 + 22
-        pills.append(f'<rect x="{x}" y="168" width="{width}" height="25" rx="6" fill="{p["bg"]}" stroke="{p["line"]}"/><text x="{x+11}" y="185" fill="{p["muted"]}" font-size="13">{escape(tag)}</text>')
+        width = len(tag) * 7 + 22
+        pills.append(f'<rect x="{x}" y="151" width="{width}" height="23" rx="6" fill="{p["bg"]}" stroke="{p["line"]}"/><text x="{x+11}" y="167" fill="{p["muted"]}" font-size="12">{escape(tag)}</text>')
         x += width + 8
-    return document(420, 214, title + ". " + " ".join(description), f'''
+    return document(420, 190, title + ". " + " ".join(description), f'''
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{p['gold']}" stop-opacity=".08"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="1" width="418" height="212" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
-<rect x="2" y="2" width="416" height="210" rx="14" fill="url(#wash)"/>
+<rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="416" height="186" rx="14" fill="url(#wash)"/>
 <text x="24" y="31" fill="{p['gold']}" font-size="11" font-weight="700" letter-spacing="1.2">{number} / {escape(category)}</text>
 <path d="M379 31l12-12m-11 0h11v11" fill="none" stroke="{p['gold']}" stroke-width="1.7"/>
-<g transform="translate(346 102)" fill="none" stroke="{p['blue']}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45">{artwork}</g>
-<text x="24" y="77" fill="{p['ink']}" font-size="{title_size}" font-weight="700" letter-spacing="-.7">{escape(title)}</text>
-<text x="24" y="113" fill="{p['muted']}" font-size="18">{escape(description[0])}</text>
-<text x="24" y="138" fill="{p['muted']}" font-size="18">{escape(description[1])}</text>
+<g transform="translate(346 91)" fill="none" stroke="{p['blue']}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".45">{artwork}</g>
+<text x="24" y="68" fill="{p['ink']}" font-size="{title_size}" font-weight="600">{escape(title)}</text>
+<text x="24" y="104" fill="{p['muted']}" font-size="16">{escape(description[0])}</text>
+<text x="24" y="128" fill="{p['muted']}" font-size="16">{escape(description[1])}</text>
 {''.join(pills)}
 ''')
 
@@ -108,7 +110,7 @@ def button(p, label, primary=False):
     bg, ink = (p["gold"], p["bg"]) if primary else (p["card"], p["ink"])
     line = p["gold"] if primary else p["line"]
     return document(116, 36, label, f'''<rect x=".7" y=".7" width="114.6" height="34.6" rx="8" fill="{bg}" stroke="{line}"/>
-<text x="16" y="23" fill="{ink}" font-size="14" font-weight="700">{escape(label)}</text>
+<text x="16" y="23" fill="{ink}" font-size="13" font-weight="600">{escape(label)}</text>
 <path d="M94 22l7-7m-7 0h7v7" fill="none" stroke="{ink}" stroke-width="1.4" stroke-linecap="round"/>''')
 
 
@@ -136,79 +138,81 @@ TOOLKIT = [
 def section(p, entry):
     slug, number, title, icon = entry
     label = {"about": "EXPERIENCE", "projects": "PROJECTS", "toolkit": "TECHNOLOGIES", "activity": "PUBLIC ACTIVITY"}[slug]
-    return document(840, 104, title, f'''
+    return document(840, 84, title, f'''
+<style>@media (max-width:600px) {{ .section-heading {{ font-size:44px; }} .section-label {{ display:none; }} }}</style>
 <defs><linearGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".08"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient>
 <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="{p['muted']}" opacity=".16"/></pattern></defs>
-<rect x="1" y="1" width="838" height="102" rx="14" fill="{p['bg']}" stroke="{p['line']}"/>
-<rect x="2" y="2" width="836" height="100" rx="13" fill="url(#glow)"/>
-<rect x="610" y="2" width="228" height="100" rx="14" fill="url(#dots)"/>
+<rect x="1" y="1" width="838" height="82" rx="14" fill="{p['bg']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="836" height="80" rx="13" fill="url(#glow)"/>
+<rect x="610" y="2" width="228" height="80" rx="14" fill="url(#dots)"/>
 <path d="M25 2h90" stroke="{p['gold']}" stroke-width="2"/>
-<text x="26" y="30" fill="{p['gold']}" font-size="12" letter-spacing="2">{number} / {label}</text>
-<text x="24" y="77" fill="{p['ink']}" font-size="43" font-weight="700" letter-spacing="-1">{title}</text>
-<path d="M607 52h65m55 0h70" stroke="{p['gold']}" stroke-opacity=".3"/>
-<circle cx="700" cy="52" r="36" fill="{p['bg']}" stroke="{p['line']}"/>
-<g transform="translate(681 32) scale(.7)" fill="none" stroke="{p['blue']}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
-<circle cx="608" cy="52" r="3" fill="{p['gold']}"/>
-<circle cx="797" cy="52" r="3" fill="{p['blue']}"/>
+<text class="section-label" x="26" y="26" fill="{p['gold']}" font-size="11" letter-spacing="1.3">{number} / {label}</text>
+<text class="section-heading" x="24" y="60" fill="{p['ink']}" font-size="26" font-weight="600">{title}</text>
+<path d="M607 42h65m55 0h70" stroke="{p['gold']}" stroke-opacity=".3"/>
+<circle cx="700" cy="42" r="29" fill="{p['bg']}" stroke="{p['line']}"/>
+<g transform="translate(684 26) scale(.57)" fill="none" stroke="{p['blue']}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
+<circle cx="608" cy="42" r="3" fill="{p['gold']}"/>
+<circle cx="797" cy="42" r="3" fill="{p['blue']}"/>
 ''')
 
 
 def toolkit(p, entry):
     slug, title, lines, icon = entry
-    return document(420, 180, title + ": " + ". ".join(lines), f'''
+    return document(420, 152, title + ": " + ". ".join(lines), f'''
 <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="{p['gold']}" stop-opacity=".07"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></linearGradient></defs>
-<rect x="1" y="1" width="418" height="178" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
-<rect x="2" y="2" width="416" height="176" rx="13" fill="url(#wash)"/>
-<text x="24" y="49" fill="{p['ink']}" font-size="28" font-weight="700" letter-spacing="-.5">{escape(title)}</text>
+<rect x="1" y="1" width="418" height="150" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<rect x="2" y="2" width="416" height="148" rx="13" fill="url(#wash)"/>
+<text x="24" y="40" fill="{p['ink']}" font-size="20" font-weight="600">{escape(title)}</text>
 <g transform="translate(351 17) scale(.65)" fill="none" stroke="{p['blue']}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">{ICONS[icon]}</g>
-<path d="M24 73h40" stroke="{p['gold']}" stroke-width="2"/>
-<text x="24" y="111" fill="{p['muted']}" font-size="18">{escape(lines[0])}</text>
-<text x="24" y="144" fill="{p['muted']}" font-size="18">{escape(lines[1])}</text>
+<path d="M24 62h40" stroke="{p['gold']}" stroke-width="2"/>
+<text x="24" y="92" fill="{p['muted']}" font-size="16">{escape(lines[0])}</text>
+<text x="24" y="120" fill="{p['muted']}" font-size="16">{escape(lines[1])}</text>
 ''')
 
 
 def current_role(p):
-    return document(420, 214, "Current role: Software Engineer at Airbnb, contracted via Altimetrik. Payments risk and alerting. August 2026 to present.", f'''
+    return document(420, 190, "Current role: Software Engineer at Airbnb, contracted via Altimetrik. Payments risk and alerting. August 2026 to present.", f'''
 <defs><radialGradient id="halo"><stop stop-color="{p['gold']}" stop-opacity=".1"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient></defs>
-<rect x="1" y="1" width="418" height="212" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
 <ellipse cx="338" cy="62" rx="140" ry="105" fill="url(#halo)"/>
 <circle cx="30" cy="28" r="4" fill="{p['gold']}"/>
-<text x="43" y="32" fill="{p['gold']}" font-size="12" font-weight="700" letter-spacing="1.4">CURRENT CHAPTER</text>
-<text x="24" y="77" fill="{p['ink']}" font-size="35" font-weight="700">Airbnb</text>
-<text x="24" y="105" fill="{p['muted']}" font-size="18">Contracted via Altimetrik</text>
-<text x="24" y="144" fill="{p['ink']}" font-size="19">Payments risk &amp; alerting</text>
-<text x="24" y="171" fill="{p['muted']}" font-size="17">APIs, logs, and monitoring</text>
-<text x="24" y="197" fill="{p['gold']}" font-size="14">Aug 2026 — Present</text>
+<text x="43" y="32" fill="{p['gold']}" font-size="11" font-weight="600" letter-spacing="1.2">CURRENT CHAPTER</text>
+<text x="24" y="68" fill="{p['ink']}" font-size="24" font-weight="600">Airbnb</text>
+<text x="24" y="96" fill="{p['muted']}" font-size="15">Contracted via Altimetrik</text>
+<text x="24" y="127" fill="{p['ink']}" font-size="16">Payments risk &amp; alerting</text>
+<text x="24" y="151" fill="{p['muted']}" font-size="15">APIs, logs, and monitoring</text>
+<text x="24" y="174" fill="{p['gold']}" font-size="13">Aug 2026 — Present</text>
 <g transform="translate(346 48) scale(.72)" fill="none" stroke="{p['blue']}" stroke-width="2.1" stroke-linecap="round">{ICONS['activity']}</g>
 ''')
 
 
 def background(p):
-    rows = [("Oracle", "Cloud & DevOps", 109), ("IIT Ropar", "Full stack & AI", 145), ("NIT Patna", "B.Tech · Computer Science", 181)]
+    rows = [("Oracle", "Cloud & DevOps", 103), ("IIT Ropar", "Full stack & AI", 133), ("NIT Patna", "B.Tech · Computer Science", 163)]
     content = []
     for company, detail, y in rows:
-        content.append(f'<circle cx="29" cy="{y-5}" r="3" fill="{p["gold"]}"/><text x="43" y="{y}" fill="{p["ink"]}" font-size="19" font-weight="700">{company}</text><text x="152" y="{y}" fill="{p["muted"]}" font-size="16">{escape(detail)}</text>')
-    return document(420, 214, "Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.", f'''
-<rect x="1" y="1" width="418" height="212" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
-<text x="24" y="32" fill="{p['gold']}" font-size="12" font-weight="700" letter-spacing="1.4">EXPERIENCE &amp; FOUNDATIONS</text>
-<text x="24" y="77" fill="{p['ink']}" font-size="29" font-weight="700">The path here.</text>
-<path d="M29 105v71" stroke="{p['gold']}" stroke-opacity=".3"/>
+        content.append(f'<circle cx="29" cy="{y-5}" r="3" fill="{p["gold"]}"/><text x="43" y="{y}" fill="{p["ink"]}" font-size="16" font-weight="600">{company}</text><text x="152" y="{y}" fill="{p["muted"]}" font-size="14">{escape(detail)}</text>')
+    return document(420, 190, "Background: Oracle cloud infrastructure and DevOps internship; IIT Ropar software development internship; B.Tech in Computer Science and Engineering at NIT Patna.", f'''
+<rect x="1" y="1" width="418" height="188" rx="14" fill="{p['card']}" stroke="{p['line']}"/>
+<text x="24" y="32" fill="{p['gold']}" font-size="11" font-weight="600" letter-spacing="1.2">EXPERIENCE &amp; FOUNDATIONS</text>
+<text x="24" y="68" fill="{p['ink']}" font-size="22" font-weight="600">The path here.</text>
+<path d="M29 99v59" stroke="{p['gold']}" stroke-opacity=".3"/>
 {''.join(content)}
 ''')
 
 
 def contact(p):
-    return document(840, 170, "Let's build something useful. Explore my portfolio or get in touch.", f'''
+    return document(840, 138, "Let's build something useful. Explore my portfolio or get in touch.", f'''
+<style>@media (max-width:600px) {{ .contact-heading {{ font-size:40px; }} .contact-label {{ display:none; }} }}</style>
 <defs><radialGradient id="glow"><stop stop-color="{p['gold']}" stop-opacity=".14"/><stop offset="1" stop-color="{p['gold']}" stop-opacity="0"/></radialGradient></defs>
-<rect x="1" y="1" width="838" height="168" rx="16" fill="{p['bg']}" stroke="{p['line']}"/>
-<ellipse cx="720" cy="83" rx="175" ry="120" fill="url(#glow)"/>
-<text x="30" y="39" fill="{p['gold']}" font-size="13" letter-spacing="2">LET'S CONNECT</text>
-<text x="28" y="90" fill="{p['ink']}" font-size="44" font-weight="700" letter-spacing="-1">Let's build something</text>
-<text x="28" y="139" fill="{p['gold']}" font-size="44" font-weight="700" letter-spacing="-1">useful.</text>
-<circle cx="739" cy="86" r="57" fill="none" stroke="{p['gold']}" stroke-opacity=".25"/>
-<g transform="translate(688 48) scale(1.1)">{MONOGRAM.format(gold=p['gold'])}</g>
-<path d="M618 86h64m114 0h20" stroke="{p['gold']}" stroke-opacity=".3"/>
-<circle cx="618" cy="86" r="3" fill="{p['blue']}"/>
+<rect x="1" y="1" width="838" height="136" rx="16" fill="{p['bg']}" stroke="{p['line']}"/>
+<ellipse cx="720" cy="70" rx="175" ry="100" fill="url(#glow)"/>
+<text class="contact-label" x="30" y="29" fill="{p['gold']}" font-size="11" letter-spacing="1.3">LET'S CONNECT</text>
+<text class="contact-heading" x="28" y="78" fill="{p['ink']}" font-size="28" font-weight="600">Let's build something</text>
+<text class="contact-heading" x="28" y="112" fill="{p['gold']}" font-size="28" font-weight="600">useful.</text>
+<circle cx="739" cy="70" r="47" fill="none" stroke="{p['gold']}" stroke-opacity=".25"/>
+<g transform="translate(688 32) scale(1.1)">{MONOGRAM.format(gold=p['gold'])}</g>
+<path d="M618 70h74m94 0h30" stroke="{p['gold']}" stroke-opacity=".3"/>
+<circle cx="618" cy="70" r="3" fill="{p['blue']}"/>
 ''')
 
 
