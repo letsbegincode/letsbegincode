@@ -2,7 +2,7 @@
 
 **Software engineer · NIT Patna**
 
-I like understanding how things work—and building software that makes them work better.
+I like understanding how things work and building software that makes them work better.
 
 <p>
 <a href="https://letsbegincode.github.io/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-dark.svg?v=20261015-links" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015-links" /><img src="https://raw.githubusercontent.com/letsbegincode/letsbegincode/main/assets/link-portfolio-light.svg?v=20261015-links" width="94" height="32" alt="Portfolio" /></picture></a>
